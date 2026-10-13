@@ -1,6 +1,12 @@
 # HRL Hyper OS
 
-A hybrid operating system combining an immutable Linux base (`configuration.nix`), macOS Aqua/Sonoma desktop UX (`shell.css` + live HTML5 window manager), and a Feudal Hierarchical Reinforcement Learning (`hrld.py`) OS daemon.
+A hybrid operating system combining an immutable Linux kernel base ([`torvalds/linux`](https://github.com/torvalds/linux) + [`configuration.nix`](configuration.nix)), macOS Aqua/Sonoma desktop UX ([`shell.css`](shell.css) + live HTML5 window manager), and a Feudal Hierarchical Reinforcement Learning ([`hrld.py`](hrld.py)) OS daemon.
+
+## Upstream Architecture & Credits
+
+- **Linux Kernel (`kernel/linux`)**: Upstream kernel tree tracked from [`torvalds/linux`](https://github.com/torvalds/linux) via [`.gitmodules`](.gitmodules).
+- **Immutable System Layer**: Declarative NixOS + Hyprland + Waybar configuration in [`configuration.nix`](configuration.nix).
+- **Feudal HRL Engine**: Manager $\to$ Worker tabular Q-learning daemon in [`hrld.py`](hrld.py).
 
 ## Quick Start (macOS / Linux Live Desktop)
 
